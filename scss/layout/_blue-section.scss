@@ -1,0 +1,37 @@
+.blue-section {
+    width: 100%;
+    top: 84px;
+    background-color: $primary-color;
+    
+
+    h1 {    
+        @include top-heading;
+        color: white;
+    }
+
+    p {
+        @include top-text;
+        color: white;
+    }
+
+    .flex-container {
+        @include flexbox;
+
+        .box {   
+            @include small-box;
+
+            h3{
+                @include heading-styles-box;
+            }
+
+            p{
+                @include text-styles-box;
+            }
+
+            i {
+                @include icon-styles;
+            }
+
+        }
+    }
+}
